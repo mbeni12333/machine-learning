@@ -1,0 +1,29 @@
+digraph Tree {
+node [shape=box, style="filled, rounded", color="black", fontname=helvetica] ;
+edge [fontname=helvetica] ;
+0 [label="Drama <= 0.5\ngini = 0.498\nsamples = 200\nvalue = [94, 106]\nclass = Good", fillcolor="#e9f4fc"] ;
+1 [label="annee <= 1984.0\ngini = 0.419\nsamples = 97\nvalue = [68, 29]\nclass = Bad", fillcolor="#f0b78d"] ;
+0 -> 1 [labeldistance=2.5, labelangle=45, headlabel="True"] ;
+2 [label="budget <= 23000000.0\ngini = 0.142\nsamples = 13\nvalue = [1, 12]\nclass = Good", fillcolor="#49a5e7"] ;
+1 -> 2 ;
+3 [label="gini = 0.0\nsamples = 12\nvalue = [0, 12]\nclass = Good", fillcolor="#399de5"] ;
+2 -> 3 ;
+4 [label="gini = 0.0\nsamples = 1\nvalue = [1, 0]\nclass = Bad", fillcolor="#e58139"] ;
+2 -> 4 ;
+5 [label="nb_votes <= 195210.0\ngini = 0.323\nsamples = 84\nvalue = [67, 17]\nclass = Bad", fillcolor="#eca16b"] ;
+1 -> 5 ;
+6 [label="gini = 0.229\nsamples = 76\nvalue = [66, 10]\nclass = Bad", fillcolor="#e99457"] ;
+5 -> 6 ;
+7 [label="gini = 0.219\nsamples = 8\nvalue = [1, 7]\nclass = Good", fillcolor="#55abe9"] ;
+5 -> 7 ;
+8 [label="nb_votes <= 134064.0\ngini = 0.377\nsamples = 103\nvalue = [26, 77]\nclass = Good", fillcolor="#7cbeee"] ;
+0 -> 8 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
+9 [label="budget <= 35500000.0\ngini = 0.436\nsamples = 81\nvalue = [26, 55]\nclass = Good", fillcolor="#97cbf1"] ;
+8 -> 9 ;
+10 [label="gini = 0.363\nsamples = 63\nvalue = [15, 48]\nclass = Good", fillcolor="#77bced"] ;
+9 -> 10 ;
+11 [label="gini = 0.475\nsamples = 18\nvalue = [11, 7]\nclass = Bad", fillcolor="#f6d1b7"] ;
+9 -> 11 ;
+12 [label="gini = 0.0\nsamples = 22\nvalue = [0, 22]\nclass = Good", fillcolor="#399de5"] ;
+8 -> 12 ;
+}
